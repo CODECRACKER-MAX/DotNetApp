@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Predictor.exe" version="1.0.0.0" publicKeyToken="312da73d92afcf4a" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Predictor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Predictor.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Guna.UI2.dll" size="2338248">
+      <assemblyIdentity name="Guna.UI2" version="2.0.2.5" publicKeyToken="E4B9CDD7B4CDE4B4" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>HKo/0JFTyOo9Yj1XIxM/mHUfKvwcE1mS8Z8fGnBESQw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Predictor.exe" size="1706472">
+      <assemblyIdentity name="Predictor" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>COKuz4q4EajtOSXaK7cndjkxMzpPjJ0t312QlVTUIRY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Predictor.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-8HDUPE6\Stefen" issuerKeyHash="0ab3751acf389b3ef7a118aa1ee0c0c0e13d85f8" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>AVEGo/Ymu5iPx7WT/jy8nuQiYdR/sOZp4RZE3Upu3i4=</DigestValue></Reference></SignedInfo><SignatureValue>cZco7VZZG1TvnlyMa3Okh/JE1i4XMjScVWZmMXP2G1l086Vd6FJEVQ5RkURelYOZsYJz5gfhjILXQMh6CWWDQUP4ON/HL/n7jkCqjsoaNLd36VyRqJcvEUFbIypIXlXAQq1cCvFKnmtHueiuQmj474YIUCR1DnIbrYR48NO723w=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>4ecvI+/SDqi0vSIP0ytP0lG1yvalFCwEXgwdHVRkwwqbrBrP1TDzTZi5wK0srRw1GwDG/8KDeJWs+DM1LZBNvaCY0jdDecSopyGeyI6uVNxPb4QZrzuJRiN8FNJbrSwSd/0u1fbkcVV1hyNvqCkbM3czEjtTSoZgRFtAH4O4910=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2ede6e4add4416e169e6b07fd46122e49ebc3cfe93b5c78f98bb26f6a3065101" Description="" Url=""><as:assemblyIdentity name="Predictor.exe" version="1.0.0.0" publicKeyToken="312da73d92afcf4a" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-8HDUPE6\Stefen</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>H5m9CT8oPeU/ZYS+6UJsRgjQA774Nx9A/dxP8hTZ0zU=</DigestValue></Reference></SignedInfo><SignatureValue>hR8WsYm1fmTMLwtqU3pgeVerRP0OFnrqOeC/8VJwTgvcRmQRjXBPXupfBLcRQQ6tjPSPHBDAT4OuBNTPsoBC3LDEJnUuPeSUljArHr0EMx/EtkLHkb9c8jOxXIZU20KdimKPQqDvhPzm2bjI38aYh+ydV1hn69tUK31zBzvinUI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>4ecvI+/SDqi0vSIP0ytP0lG1yvalFCwEXgwdHVRkwwqbrBrP1TDzTZi5wK0srRw1GwDG/8KDeJWs+DM1LZBNvaCY0jdDecSopyGeyI6uVNxPb4QZrzuJRiN8FNJbrSwSd/0u1fbkcVV1hyNvqCkbM3czEjtTSoZgRFtAH4O4910=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQfVpP8CdRf5BLBP4FlE/eKTANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwARABFAFMASwBUAE8AUAAtADgASABEAFUAUABFADYAXABTAHQAZQBmAGUAbjAeFw0yMTEyMTkxNTM2MTNaFw0yMjEyMTkyMTM2MTNaMDcxNTAzBgNVBAMeLABEAEUAUwBLAFQATwBQAC0AOABIAEQAVQBQAEUANgBcAFMAdABlAGYAZQBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDh5y8j79IOqLS9Ig/TK0/SUbXK9qUULAReDB0dVGTDCpusGs/VMPNNmLnArSytHDUbAMb/woN4laz4MzUtkE29oJjSN0N5xKinIZ7Ijq5U3E9vhBmvO4lGI3wU0lutLBJ3/S7V9uRxVXWHI2+oKRszdzMSO1NKhmBEW0Afg7j3XQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAI5iVSFlVB8G8q6CVSfWtTpPQSMR+Hbb3IZJPooV56n76BUKtzDBzaty41xAacGUiGShenXY+uuqqaVzjNkUkIucKjHMSM6PlnJeU4T0SYuejAySGFyQffD0m3E3LzhYaGJ8wB8MuUQB0Hsw/rwpTqUgxKuHm/VADsdwAfJ4Zk62</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
